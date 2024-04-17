@@ -1,13 +1,13 @@
 <?php
 
-class Arbusto
+class BancoDePesca
 {
 
     private int $cantidadAlimento;
 
     public function __construct()
     {
-        $this->cantidadAlimento = 125;
+        $this->cantidadAlimento = 225;
     }
 
     public function getAlimento(): int

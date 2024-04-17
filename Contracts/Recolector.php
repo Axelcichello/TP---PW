@@ -1,6 +1,6 @@
 <?php
 
-interface Recolectar
+interface Recolector
 {
     public function recolectar(Recolectable $recolectable): void;
 }

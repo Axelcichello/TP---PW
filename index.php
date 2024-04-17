@@ -11,12 +11,12 @@ $arbusto = new Arbusto;
 $aldeano->recolectar($arbusto);
 // Se debe ver el echo que devuelve el método recolectar
 
-// echo "<br>";
+echo "<br>";
 
-// $pesquero = new Pesquero;
-// $bancoDePesca = new BancoDePesca;
+$pesquero = new Pesquero;
+$bancoDePesca = new BancoDePesca;
 
-// $pesquero->recolectar($bancoDePesca);
+$pesquero->recolectar($bancoDePesca);
 // // // Se debe ver el echo que devuelve el método recolectar
 
 // // // ------

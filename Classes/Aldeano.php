@@ -1,6 +1,6 @@
 <?php
 
-class Aldeano implements Recolector
+abstract class Aldeano implements Recolector
 {
 
     use PuedoRecolectar;

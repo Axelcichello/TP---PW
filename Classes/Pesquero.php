@@ -1,6 +1,8 @@
 <?php
 
-Class Pesquero {
+Class Pesquero implements Recolector{
+
+    use PuedoRecolectar;
 
     private int $velocidadRecoleccion;
 
@@ -9,8 +11,5 @@ Class Pesquero {
         $this->velocidadRecoleccion = 18;
     }
 
-    public function recolectar(BancoDePesca $bancoDePesca) : void
-    {
-        echo "Recolecte todo el alimento en " . ceil($bancoDePesca->getAlimento()/$this->velocidadRecoleccion);
-    }
+    
 }

@@ -1,15 +1,14 @@
-<?php 
+<?php
 
-    Class Aldeano {
+class Aldeano implements Recolector
+{
 
-        private int $velocidadRecoleccion; //Cantidad de alimento que recoge por minuto
+    use PuedoRecolectar;
 
-        public function __construct(){
-            $this->velocidadRecoleccion = 18;
-        }
+    private int $velocidadRecoleccion; //Cantidad de alimento que recoge por minuto
 
-        public function recolectar(Arbusto $arbusto) : void
-        {
-            echo "Recolecte todo el alimento en " . ceil($arbusto->getAlimento()/$this->velocidadRecoleccion);
-        }
+    public function __construct()
+    {
+        $this->velocidadRecoleccion = 18;
     }
+}

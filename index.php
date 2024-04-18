@@ -1,5 +1,9 @@
 <?php
 
+include 'Contracts/Recolectable.php';
+include 'Contracts/Recolector.php';
+include 'traits/PuedoRecolectar.php';
+include 'traits/TengoComida.php';
 require 'Classes/Aldeano.php';
 require 'Classes/Arbusto.php';
 require 'Classes/Pesquero.php';

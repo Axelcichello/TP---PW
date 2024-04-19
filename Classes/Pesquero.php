@@ -1,15 +1,15 @@
 <?php
 
-Class Pesquero implements Recolector{
-
+class Pesquero implements Recolector
+{
     use PuedoRecolectar;
 
-    private int $velocidadRecoleccion;
+    private  $velocidadRecoleccion;
+    protected $bonus;
 
     public function __construct()
     {
         $this->velocidadRecoleccion = 18;
+        $this->bonus = null;    
     }
-
-    
 }

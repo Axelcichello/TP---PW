@@ -1,37 +1,40 @@
 <?php
+require 'contracts/Recolector.php';
+require 'contracts/Recolectable.php';
+require 'traits/PuedoRecolectar.php';
+require 'traits/TengoComida.php';
+require 'classes/Aldeano.php';
+require 'classes/Arbusto.php';
+require 'classes/Pesquero.php';
+require 'classes/BancoDePesca.php';
+require 'classes/AldeanoChino.php';
+require 'classes/Aldeanofranco.php';
 
-include 'Contracts/Recolectable.php';
-include 'Contracts/Recolector.php';
-include 'traits/PuedoRecolectar.php';
-include 'traits/TengoComida.php';
-require 'Classes/Aldeano.php';
-require 'Classes/Arbusto.php';
-require 'Classes/Pesquero.php';
-require 'Classes/BancoDePesca.php';
 
-$aldeano = new Aldeano;
-$arbusto = new Arbusto;
 
-$aldeano->recolectar($arbusto);
-// Se debe ver el echo que devuelve el método recolectar
+
+// $aldeanoMaya = new Aldeano();
+// $arbusto1 = new Arbusto();
+// $aldeanoMaya->recolectar($arbusto1);
 
 echo "<br>";
 
-$pesquero = new Pesquero;
-$bancoDePesca = new BancoDePesca;
+echo "Pesquero: ";
+$pesquero1 = new Pesquero();  
+$bancoPesca1 = new BancoDePesca();
+$pesquero1->recolectar($bancoPesca1);
+echo "<br>";
 
-$pesquero->recolectar($bancoDePesca);
-// // // Se debe ver el echo que devuelve el método recolectar
+$aldeanoChino = new AldeanoChino();
+$aldeanoFranco = new AldeanoFranco();
+$arbusto1 = new Arbusto();
+$arbusto2 = new Arbusto();
 
-// // // ------
+echo "Aldeano Chino: ";
+$aldeanoChino->recolectar($arbusto1);
+echo "<br>";
 
-// // $aldeanoChino = new AldeanoChino;
-// // $aldeanoFranco = new AldeanoFranco;
-// // $arbusto1 = new Arbusto;
-// // $arbusto2 = new Arbusto;
+echo "Aldeano Franco: ";
+$aldeanoFranco->recolectar($arbusto2);
 
-// // $aldeanoChino->recolectar($arbusto1);
-// // // Se debe ver el echo que devuelve el método recolectar sin bonus
 
-// // $aldeanoFranco->recolectar($arbusto2);
-// // // Se debe ver el echo que devuelve el método recolectar con el bonus del 25%

@@ -6,4 +6,6 @@ trait TengoComida
     {
         return $this->cantidadAlimento;
     }
+
+    
 }

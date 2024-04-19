@@ -2,5 +2,7 @@
 
 interface Recolector
 {
-    public function recolectar(Recolectable $recolectable): void;
+    public function recolectar(Recolectable $reco);
+    
+    public function getBonus();
 }

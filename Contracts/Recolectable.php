@@ -1,6 +1,6 @@
 <?php
 
-interface Recolectable
+interface Recolectable 
 {
-    public function getAlimento(): int;
+    public function getAlimento() : int;
 }

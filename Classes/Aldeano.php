@@ -2,13 +2,16 @@
 
 abstract class Aldeano implements Recolector
 {
-
     use PuedoRecolectar;
 
-    private int $velocidadRecoleccion; //Cantidad de alimento que recoge por minuto
+    protected  $velocidadRecoleccion;
+    protected  $bonus;
 
     public function __construct()
     {
         $this->velocidadRecoleccion = 18;
+        $this->bonus = null;
     }
+
+
 }

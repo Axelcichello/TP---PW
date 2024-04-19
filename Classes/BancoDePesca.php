@@ -2,7 +2,6 @@
 
 class BancoDePesca implements Recolectable
 {
-
     use TengoComida;
 
     private int $cantidadAlimento;
@@ -11,4 +10,6 @@ class BancoDePesca implements Recolectable
     {
         $this->cantidadAlimento = 225;
     }
+
+
 }
